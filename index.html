@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>TimerApp</title>
+</head>
+<body>
+    <span style="color:#fff; font-size: 27px">HOURS MINUTES SECONDS</span>
+    <div>
+        <h1 id="h">0</h1>
+        <h1 id="m">0</h1>
+        <h1 id="s">0</h1>
+    </div>
+    <div id="set">
+        <label for="ins">Seconds:</label>
+        <input id="ins" name="timeinsec" type="number" min="0" max="60" value="0">
+        <label for="inm">Minutes:</label>
+        <input type="number" id="inm" min="0" max="60" value="0">
+        <label for="inh">Hours:</label>
+        <input type="number" id="inh" min="0" value="0">
+        <button id="start" onclick="start()">Start</button>
+    </div>
+    <button id="reset" onClick="location.reload()">Reset</button>
+    <script src="script.js"></script>
+</body>
+</html>
